@@ -49,5 +49,10 @@ Included evidence:
 
 - Role-based security groups created
 - Test users created
+- Baseline employee group membership assigned
+- Ava Patel assigned baseline employee access and HR role-specific access
+
+- Role-based security groups created
+- Test users created
 - Baseline group membership assigned
 - Department-specific group membership assigned
