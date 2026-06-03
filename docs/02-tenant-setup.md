@@ -37,5 +37,5 @@ Screenshots for this section are stored in:
 
 Included evidence:
 
-- Microsoft 365 admin center access for the lab tenant
 - Lab overview documentation created in GitHub
+- Microsoft 365 admin center access for the Northstar Identity Lab tenant
