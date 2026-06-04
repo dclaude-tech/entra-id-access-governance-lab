@@ -43,8 +43,8 @@ Screenshots for this section are stored in:
 
 Included evidence:
 
-- MFA pilot group created
+- MFA pilot group membership created
 - Conditional Access policy scoped to the MFA pilot group
 - MFA grant control configured
 - Conditional Access policy enabled
-- Pilot user MFA sign-in activity reviewed
+- Ava Patel sign-in activity reviewed after MFA policy testing
