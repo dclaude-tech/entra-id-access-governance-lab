@@ -46,5 +46,7 @@ Screenshots for this section are stored in:
 
 Included evidence:
 
-- Finance group membership reviewed
-- Ava Patel access removal validated
+- Finance group membership reviewed after mover workflow
+- Marcus Chen retained Finance access based on Finance Analyst role
+- Jordan Lee had Finance access after moving from IT to Finance
+- Ava Patel group-based access removal validated after leaver workflow
