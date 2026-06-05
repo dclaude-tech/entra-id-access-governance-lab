@@ -43,5 +43,12 @@ Screenshots for this section are stored in:
 Included evidence:
 
 - Privileged Role Administrator role reviewed
+- Role description reviewed before assignment
+- Privileged Identity Management assignments page reviewed
+- Jordan Lee assigned eligible Privileged Role Administrator access
+
+Included evidence:
+
+- Privileged Role Administrator role reviewed
 - PIM assignment page reviewed
 - Jordan Lee assigned eligible privileged role access
