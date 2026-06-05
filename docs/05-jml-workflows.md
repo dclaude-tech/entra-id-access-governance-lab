@@ -53,9 +53,10 @@ Screenshots for this section are stored in:
 
 Included evidence:
 
-- Joiner user profile reviewed
-- Joiner group access reviewed
-- Mover profile updated
-- Mover group membership updated
-- Leaver account disabled
+- Jordan Lee joiner profile reviewed with IT role and department details
+- Jordan Lee joiner group access reviewed
+- Jordan Lee mover profile updated from IT to Finance
+- Jordan Lee mover group access updated from IT support access to Finance analyst access
+- Ava Patel leaver account disabled
+- Ava Patel group-based access removed
 - Leaver group access removed
