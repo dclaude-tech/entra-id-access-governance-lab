@@ -4,49 +4,56 @@
 
 This project is a hands-on IAM access governance lab built in Microsoft Entra ID.
 
-The lab documents how I created a small identity environment with fictional users, role-based security groups, MFA enforcement, Conditional Access, privileged access management, joiner/mover/leaver workflows, and access review simulation.
+I created a small fictional identity environment called **Northstar Identity Lab** to practice assigning, testing, reviewing, and removing user access in a controlled lab tenant. The lab includes fictional users, department-based security groups, Conditional Access with MFA, joiner/mover/leaver workflow changes, eligible privileged access, and a manual access review simulation.
 
-The goal of this project is to practice common IAM Analyst tasks in a controlled lab environment and document the work clearly with screenshots and written explanations.
+## Business scenario
 
-## Project status
+Northstar Identity Lab is a fictional organization with HR, Finance, and IT users. Each department needs access to different resources based on job function.
 
-Complete.
-
-This lab includes Microsoft Entra tenant setup, test users, role-based security groups, MFA and Conditional Access, joiner/mover/leaver workflows, Privileged Identity Management, access review simulation, and conceptual Okta/SailPoint mapping.
+In this lab, I acted as the IAM analyst responsible for setting up baseline group access, enforcing MFA for a pilot group, updating access during user lifecycle changes, limiting privileged access, and reviewing group membership for least privilege.
 
 ## Lab environment
 
 The lab uses a Microsoft Entra ID tenant named **Northstar Identity Lab**.
 
-The environment includes fictional users, departments, and security groups to model realistic access governance scenarios across HR, Finance, IT, Conditional Access, privileged access, and access review workflows.
+The environment includes fictional users, departments, and security groups to model common access governance scenarios across HR, Finance, IT, Conditional Access, privileged access, and access review workflows.
 
-## Skills demonstrated
+## IAM concepts practiced
 
 * Microsoft Entra ID tenant setup
-* User provisioning
-* Security group creation
-* Role-based access control
-* Least-privilege access assignment
-* MFA and Conditional Access policy configuration
-* Conditional Access pilot group testing
+* User and security group management
+* Group-based access assignment
+* Least-privilege access review
+* Conditional Access and MFA testing
 * Joiner, mover, and leaver workflow simulation
 * Privileged Identity Management eligible role assignment
 * Manual access review simulation
 * IAM documentation and evidence collection
-* Conceptual IAM mapping across Entra ID, Okta, and SailPoint
+* Conceptual mapping to Okta and SailPoint
 
-## Project sections
+## Access governance decisions
 
-| Section                  | Description                                                                  |
-| ------------------------ | ---------------------------------------------------------------------------- |
-| Lab overview             | Defines the project purpose, scope, and lab environment                      |
-| Tenant setup             | Documents the Microsoft 365 and Microsoft Entra lab environment              |
-| Users and groups         | Documents test users, security groups, and RBAC assignments                  |
-| Conditional Access       | Documents MFA policy configuration, pilot group scoping, and sign-in testing |
-| JML workflows            | Simulates joiner, mover, and leaver lifecycle workflows                      |
-| Admin roles and PIM      | Documents privileged access management using PIM                             |
-| Access review simulation | Reviews group membership and validates access cleanup                        |
-| Concept mapping          | Maps Entra ID lab concepts to Okta and SailPoint at a high level             |
+This lab includes several access governance decisions that map to common IAM support and review work:
+
+* Using a pilot group before enforcing MFA more broadly
+* Assigning access through groups instead of individual one-off assignments
+* Updating group membership when a user changes roles
+* Removing access during the leaver workflow
+* Using eligible privileged access instead of standing privileged access
+* Reviewing group membership to confirm whether access still matches the user’s role
+
+## Lab walkthrough
+
+| Section                  | Description                                                                               |
+| ------------------------ | ----------------------------------------------------------------------------------------- |
+| Lab overview             | Defines the project purpose, scope, and lab environment                                   |
+| Tenant setup             | Documents the Microsoft 365 and Microsoft Entra lab environment                           |
+| Users and groups         | Documents fictional users, department groups, and group-based access assignments          |
+| Conditional Access       | Documents MFA policy configuration, pilot group scoping, and sign-in testing              |
+| JML workflows            | Simulates joiner, mover, and leaver lifecycle workflows                                   |
+| Admin roles and PIM      | Documents eligible privileged access using Microsoft Entra Privileged Identity Management |
+| Access review simulation | Reviews group membership and validates access cleanup                                     |
+| Concept mapping          | Maps Entra ID lab concepts to Okta and SailPoint at a high level                          |
 
 ## Repository structure
 
@@ -68,23 +75,26 @@ README.md
 * [Access review simulation](docs/07-access-review-simulation.md)
 * [Concept mapping: Okta and SailPoint](docs/08-concept-mapping.md)
 
-## Evidence
+## Evidence collected
 
 Screenshots are organized by lab section in the `screenshots/` folder.
 
-Evidence includes:
+Evidence includes Microsoft Entra tenant setup, fictional users, department groups, Conditional Access configuration, MFA testing, lifecycle workflow changes, PIM eligible access, and manual access review results.
 
-* Microsoft 365 and Microsoft Entra tenant setup
-* Role-based security groups
-* Test users and group memberships
-* Conditional Access MFA policy configuration
-* MFA pilot group scoping and sign-in testing
-* Joiner, mover, and leaver workflow changes
-* PIM eligible role assignment
-* Manual access review simulation results
+## Project takeaways
 
-## Important note
+This lab helped reinforce that IAM governance is not only about creating users and assigning groups. Access also needs to be tested, reviewed, adjusted when roles change, and removed when it is no longer needed.
 
-This lab is built hands-on in Microsoft Entra ID only.
+The biggest takeaway from this project was that least privilege is an ongoing process. It applies during onboarding, role changes, offboarding, privileged access assignment, and access reviews.
 
-Okta and SailPoint are not configured or integrated in this project. They are referenced only as conceptual comparisons to show how similar IAM concepts may appear across different identity platforms.
+## Project status
+
+Complete.
+
+This lab includes Microsoft Entra setup, group-based access, Conditional Access testing, lifecycle workflow simulation, eligible privileged access, manual access review documentation, and conceptual Okta/SailPoint mapping.
+
+## Scope notes
+
+This lab was built hands-on in Microsoft Entra ID only. Okta and SailPoint were not configured or integrated.
+
+Okta and SailPoint are referenced only as conceptual comparisons. This lab uses fictional users, groups, and screenshots from a test tenant and does not include production data, automated provisioning, or live third-party IAM integrations.
